@@ -21,18 +21,18 @@ docker run -d \
   --tty \
   --privileged \
   --volume /sys/fs/cgroup:/sys/fs/cgroup:ro \
-  --name maodevops-opensuse-systemd \
-  maodevops/opensuse-systemd:latest
+  --name maodevops-opensuse15.1-systemd \
+  maodevops/opensuse-systemd:15.1
 ```
 
 ### Enter it
 
 ```bash
-docker exec -it maodevops-opensuse-systemd /bin/bash
+docker exec -it maodevops-opensuse15.1-systemd /bin/bash
 ```
 
 ### Remove it
 
 ```bash
-docker rm -f maodevops-opensuse-systemd
+docker rm -f maodevops-opensuse15.1-systemd
 ```
